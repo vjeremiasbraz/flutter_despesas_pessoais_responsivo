@@ -55,7 +55,7 @@ class _TransactionFormState extends State<TransactionForm> {
               controller: _titleController,
               onSubmitted: (_) => _submitForm(),
               decoration: const InputDecoration(
-                labelText: 'Título',
+                labelText: 'Título da despesa',
               ),
             ),
             TextField(
@@ -80,7 +80,7 @@ class _TransactionFormState extends State<TransactionForm> {
                   ),
                   TextButton(
                     child: const Text(
-                      'Selecionar Data',
+                      'Selecionar outra data',
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                       ),
@@ -95,7 +95,7 @@ class _TransactionFormState extends State<TransactionForm> {
               children: <Widget>[
                 ElevatedButton(
                   child: Text(
-                    'Nova Transação',
+                    'Novo Lançamento',
                     style: TextStyle(
                       color: Theme.of(context).textTheme.button?.color,
                     ),
